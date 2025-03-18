@@ -5,15 +5,19 @@ import home from "../assets/home.png"
 import searchList from "../assets/search-list.png"
 import "../styles/navbar.scss"
 import { useNavigate } from "react-router"
+import Shadow from "./Shadow.jsx"
+import Glow from "./Glow.jsx"
 
 const Navbar = () => {
   const nav = useNavigate()
   return (
     <view className="navbar-container">
-      <view className="navbar-container__glow" />
+      <Glow position="bottom" />
       <view className="navbar">
-        <view className="navbar__shadow" />
-
+        <Shadow
+          customStyles={{ position: "absolute", top: 0 }}
+          position="top"
+        />
         <image
           bindtap={() => nav("/menu")}
           src={home}
