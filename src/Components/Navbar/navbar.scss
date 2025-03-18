@@ -23,6 +23,21 @@
         rgba(0, 0, 0, 0) 60%
       );
     }
+    .icon-container {
+      position: relative;
+      width: 32px;
+      height: 32px;
+      .icon-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0) 70%
+        );
+      }
+    }
   }
   .navbar-glow {
     background: radial-gradient(

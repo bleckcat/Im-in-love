@@ -12,27 +12,40 @@ const Navbar = () => {
     <view className="navbar-container">
       <view className="navbar-glow" />
       <view className="navbar">
-        <view className="navbar-shadow"></view>
-        <image
-          bindtap={() => nav("/menu")}
-          src={home}
-          style={{ width: "32px", height: "32px" }}
-        />
-        <image
-          bindtap={() => nav("/menu")}
-          src={friends}
-          style={{ width: "32px", height: "32px" }}
-        />
-        <image
-          bindtap={() => nav("/menu")}
-          src={searchList}
-          style={{ width: "32px", height: "32px" }}
-        />
-        <image
-          bindtap={() => nav("/menu")}
-          src={menu}
-          style={{ width: "32px", height: "32px" }}
-        />
+        <view className="navbar-shadow" />
+
+        <view className="icon-container">
+          <view className="icon-shadow" />
+          <image
+            bindtap={() => nav("/menu")}
+            src={home}
+            style={{ width: "32px", height: "32px" }}
+          />
+        </view>
+        <view className="icon-container">
+          <view className="icon-shadow" />
+          <image
+            bindtap={() => nav("/menu")}
+            src={friends}
+            style={{ width: "32px", height: "32px" }}
+          />
+        </view>
+        <view className="icon-container">
+          <view className="icon-shadow" />
+          <image
+            bindtap={() => nav("/menu")}
+            src={searchList}
+            style={{ width: "32px", height: "32px" }}
+          />
+        </view>
+        <view className="icon-container">
+          <view className="icon-shadow" />
+          <image
+            bindtap={() => nav("/menu")}
+            src={menu}
+            style={{ width: "32px", height: "32px" }}
+          />
+        </view>
       </view>
     </view>
   )
