@@ -2,9 +2,9 @@ import { root } from "@lynx-js/react"
 
 import { App } from "./App.js"
 
-import "./styles/index.css"
+import "./styles/index.scss"
 import { MemoryRouter, Route, Routes } from "react-router"
-import Menu from "./Components/Menu/Menu.jsx"
+import Menu from "./Components/Menu.jsx"
 
 root.render(
   <MemoryRouter>
